@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CC25343226FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25341F26FF14B60022FAB8 /* Swift_Combine_MVVMApp.swift */; };
 		CC25343326FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25341F26FF14B60022FAB8 /* Swift_Combine_MVVMApp.swift */; };
-		CC25343426FF14B70022FAB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25342026FF14B60022FAB8 /* ContentView.swift */; };
-		CC25343526FF14B70022FAB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25342026FF14B60022FAB8 /* ContentView.swift */; };
 		CC25343626FF14B70022FAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC25342126FF14B70022FAB8 /* Assets.xcassets */; };
 		CC25343726FF14B70022FAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC25342126FF14B70022FAB8 /* Assets.xcassets */; };
+		CC25344D26FF18370022FAB8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC25344C26FF18370022FAB8 /* KeychainSwift */; };
+		CC25345526FF18FD0022FAB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC25345826FF18FD0022FAB8 /* Localizable.strings */; };
+		CC25345626FF18FD0022FAB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC25345826FF18FD0022FAB8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC25341F26FF14B60022FAB8 /* Swift_Combine_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Combine_MVVMApp.swift; sourceTree = "<group>"; };
-		CC25342026FF14B60022FAB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC25342126FF14B70022FAB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC25342626FF14B70022FAB8 /* Swift-Combine-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Combine-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC25342926FF14B70022FAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC25342E26FF14B70022FAB8 /* Swift-Combine-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Combine-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC25343026FF14B70022FAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC25343126FF14B70022FAB8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CC25345726FF18FD0022FAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC25345B26FF19020022FAB8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC25344D26FF18370022FAB8 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +60,14 @@
 		CC25341E26FF14B60022FAB8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CC25344826FF15030022FAB8 /* Tools */,
+				CC25344726FF14FD0022FAB8 /* Services */,
+				CC25344626FF14F80022FAB8 /* Views */,
+				CC25344526FF14F00022FAB8 /* ViewModels */,
+				CC25344426FF14EB0022FAB8 /* Models */,
 				CC25341F26FF14B60022FAB8 /* Swift_Combine_MVVMApp.swift */,
-				CC25342026FF14B60022FAB8 /* ContentView.swift */,
 				CC25342126FF14B70022FAB8 /* Assets.xcassets */,
+				CC25345826FF18FD0022FAB8 /* Localizable.strings */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -90,6 +98,41 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		CC25344426FF14EB0022FAB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC25344526FF14F00022FAB8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC25344626FF14F80022FAB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC25344726FF14FD0022FAB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC25344826FF15030022FAB8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +149,9 @@
 			dependencies = (
 			);
 			name = "Swift-Combine-MVVM (iOS)";
+			packageProductDependencies = (
+				CC25344C26FF18370022FAB8 /* KeychainSwift */,
+			);
 			productName = "Swift-Combine-MVVM (iOS)";
 			productReference = CC25342626FF14B70022FAB8 /* Swift-Combine-MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -151,8 +197,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = CC25341926FF14B60022FAB8;
+			packageReferences = (
+				CC25344B26FF18370022FAB8 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = CC25342726FF14B70022FAB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC25343626FF14B70022FAB8 /* Assets.xcassets in Resources */,
+				CC25345526FF18FD0022FAB8 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC25343726FF14B70022FAB8 /* Assets.xcassets in Resources */,
+				CC25345626FF18FD0022FAB8 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC25343426FF14B70022FAB8 /* ContentView.swift in Sources */,
 				CC25343226FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,12 +247,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC25343526FF14B70022FAB8 /* ContentView.swift in Sources */,
 				CC25343326FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC25345826FF18FD0022FAB8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC25345726FF18FD0022FAB8 /* en */,
+				CC25345B26FF19020022FAB8 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CC25343826FF14B70022FAB8 /* Debug */ = {
@@ -433,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC25344B26FF18370022FAB8 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC25344C26FF18370022FAB8 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC25344B26FF18370022FAB8 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC25341A26FF14B60022FAB8 /* Project object */;
 }

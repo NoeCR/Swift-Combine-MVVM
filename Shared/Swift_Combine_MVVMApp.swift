@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift_Combine_MVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // TODO: Add main view
         }
     }
 }
