@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Swift_Combine_MVVMApp: App {
+    @StateObject var rootViewModel = RootViewModel()
+    
     var body: some Scene {
         WindowGroup {
             // TODO: Add main view
+            RootView().environmentObject(rootViewModel)
         }
     }
 }

@@ -14,6 +14,16 @@
 		CC25344D26FF18370022FAB8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC25344C26FF18370022FAB8 /* KeychainSwift */; };
 		CC25345526FF18FD0022FAB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC25345826FF18FD0022FAB8 /* Localizable.strings */; };
 		CC25345626FF18FD0022FAB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC25345826FF18FD0022FAB8 /* Localizable.strings */; };
+		CC25345E26FF22CE0022FAB8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25345D26FF22CE0022FAB8 /* RootViewModel.swift */; };
+		CC25345F26FF22CE0022FAB8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25345D26FF22CE0022FAB8 /* RootViewModel.swift */; };
+		CC25346326FF23140022FAB8 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346226FF23140022FAB8 /* StatusModel.swift */; };
+		CC25346426FF23140022FAB8 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346226FF23140022FAB8 /* StatusModel.swift */; };
+		CC25346826FF238E0022FAB8 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346726FF238E0022FAB8 /* BaseNetwork.swift */; };
+		CC25346926FF238E0022FAB8 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346726FF238E0022FAB8 /* BaseNetwork.swift */; };
+		CC25346E26FF26CD0022FAB8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346D26FF26CD0022FAB8 /* HeroesModel.swift */; };
+		CC25346F26FF26CD0022FAB8 /* HeroesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25346D26FF26CD0022FAB8 /* HeroesModel.swift */; };
+		CC25347426FF2E180022FAB8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25347326FF2E180022FAB8 /* RootView.swift */; };
+		CC25347526FF2E180022FAB8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC25347326FF2E180022FAB8 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,11 @@
 		CC25343126FF14B70022FAB8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		CC25345726FF18FD0022FAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC25345B26FF19020022FAB8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC25345D26FF22CE0022FAB8 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		CC25346226FF23140022FAB8 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		CC25346726FF238E0022FAB8 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		CC25346D26FF26CD0022FAB8 /* HeroesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesModel.swift; sourceTree = "<group>"; };
+		CC25347326FF2E180022FAB8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,8 @@
 		CC25344426FF14EB0022FAB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CC25346226FF23140022FAB8 /* StatusModel.swift */,
+				CC25346D26FF26CD0022FAB8 /* HeroesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +125,7 @@
 		CC25344526FF14F00022FAB8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CC25347226FF2E030022FAB8 /* Main */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -115,6 +133,7 @@
 		CC25344626FF14F80022FAB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC25345C26FF22BF0022FAB8 /* Main */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +141,7 @@
 		CC25344726FF14FD0022FAB8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC25346726FF238E0022FAB8 /* BaseNetwork.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -131,6 +151,22 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		CC25345C26FF22BF0022FAB8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC25347326FF2E180022FAB8 /* RootView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CC25347226FF2E030022FAB8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC25345D26FF22CE0022FAB8 /* RootViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC25346326FF23140022FAB8 /* StatusModel.swift in Sources */,
+				CC25346E26FF26CD0022FAB8 /* HeroesModel.swift in Sources */,
+				CC25347426FF2E180022FAB8 /* RootView.swift in Sources */,
+				CC25346826FF238E0022FAB8 /* BaseNetwork.swift in Sources */,
+				CC25345E26FF22CE0022FAB8 /* RootViewModel.swift in Sources */,
 				CC25343226FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC25346426FF23140022FAB8 /* StatusModel.swift in Sources */,
+				CC25346F26FF26CD0022FAB8 /* HeroesModel.swift in Sources */,
+				CC25347526FF2E180022FAB8 /* RootView.swift in Sources */,
+				CC25346926FF238E0022FAB8 /* BaseNetwork.swift in Sources */,
+				CC25345F26FF22CE0022FAB8 /* RootViewModel.swift in Sources */,
 				CC25343326FF14B70022FAB8 /* Swift_Combine_MVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
