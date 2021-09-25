@@ -1,7 +1,8 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+// TODO: make identifiable
+struct MarvelHeroes: Codable {
     let code: Int
     let status, copyright, attributionText, attributionHTML: String
     let etag: String
@@ -11,11 +12,16 @@ struct Welcome: Codable {
 // MARK: - DataClass
 struct DataClass: Codable {
     let offset, limit, total, count: Int
-    let results: [Result]
+    let heroes: [Heroe]
+    
+    enum CodingKeys: String, CodingKey {
+        case offset, limit, total, count
+        case heroes = "results"
+    }
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Heroe: Codable, Identifiable {
     let id: Int
     let name, resultDescription: String
     let modified: Date
@@ -94,4 +100,3 @@ enum URLType: String, Codable {
     case detail = "detail"
     case wiki = "wiki"
 }
-

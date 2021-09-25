@@ -33,12 +33,19 @@ enum endpoints: String {
 
 struct BaseNetwork {
     func getAllCharacters() -> URLRequest {
-        let url: String = "\(baseUrl)\(endpoints.characters.rawValue)"
-        
-        // TODO: add query params
-        
-        var request = URLRequest(url: URL(string: url)!)
-        
+        // let url: String = "\(baseUrl)\(endpoints.characters.rawValue)"
+        var urlComponents = URLComponents(string: "\(baseUrl)\(endpoints.characters.rawValue)")
+            
+        urlComponents?.queryItems = [
+            URLQueryItem(name: "apikey", value: apikey),
+            URLQueryItem(name: "ts", value: ts),
+            URLQueryItem(name: "hash", value: hash),
+            URLQueryItem(name: "orderBy", value: orderBy),
+        ]
+                
+       //  var request = URLRequest(url: URL(string: url)!)
+        var request = URLRequest(url: (urlComponents?.url!)!)
+                
         request.httpMethod = HTTPMethods.GET
         request.addValue(HTTPHeaders.CONTENT, forHTTPHeaderField: "Content-type")
         

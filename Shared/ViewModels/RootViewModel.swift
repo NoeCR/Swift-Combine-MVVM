@@ -9,8 +9,6 @@ import Foundation
 import Combine
 
 class RootViewModel: ObservableObject {
-    @Published var status = Status.none
-    @Published var isLoading = false
-    
-    
+    @Published var status = Status.main
+    @Published var isLoading: Bool = false
 }

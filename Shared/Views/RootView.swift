@@ -12,14 +12,12 @@ struct RootView: View {
     
     var body: some View {
         switch rootViewModel.status {
-            case Status.none:
-                // TODO Main view
-                Text("None...")
+            case Status.main:
+                HeroesView(viewModel: HeroesViewModel())
             case Status.loading:
                 Text("Loading...")
             case Status.loaded:
-                // TODO Home
-                Text("Home...")
+                Text("Loaded...")
             case Status.error(error: let errorString):
                 Text("Error: \(errorString)")
             default:
